@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <title>Ikea Scene</title>
+  </head>
+  <body>
+    <a-scene>
+      
+      <a-entity id="chandelier" position="0 2 0" scale="0.3 0.3 0.3">
+        <a-cylinder
+          position="0 0 0"
+          radius="1.4"
+          height="0.3"
+          color="#A3816D"
+        ></a-cylinder>
+        <a-cylinder
+          position="0 0.1 0"
+          radius="1.2"
+          height="0.3"
+          color="#A3816D"
+        ></a-cylinder> 
+        <a-cylinder
+          position="0 0.4 0"
+          radius="1.1"
+          height="0.3"
+          color="#A3816D"
+        ></a-cylinder>
+        <a-cylinder
+          position="0 0.7 0"
+          radius="0.9"
+          height="0.3"
+          color="#A3816D"
+        ></a-cylinder>
+        <a-cylinder
+          position="0 1 0"
+          radius="0.7"
+          height="0.3"
+          color="#A3816D"
+        ></a-cylinder>
+      
+        <!-- Mirrored Stack -->
+        
+        <a-cylinder
+          position="0 -0.4 0"
+          radius="1.1"
+          height="0.3"
+          color="#A3816D"
+        ></a-cylinder>
+        <a-cylinder
+          position="0 -0.7 0"
+          radius="0.9"
+          height="0.3"
+          color="#A3816D"
+        ></a-cylinder>
+        <a-cylinder
+          position="0 -1 0"
+          radius="0.7"
+          height="0.3"
+          color="#A3816D"
+        ></a-cylinder>
+      </a-entity>
+      
+      
+      <a-entity position="4.3 1.25 -1" scale="1.75 2.5 .5">
+        <!-- Door with a four-pane window -->
+        <a-box position="0 0 0" width="1" height="2.5" depth="0.1" color="#444540"></a-box>
+
+        <!-- Glass panes -->
+        <a-box position="0 0.5 .05" width="0.4" height="0.8" depth="0.02" color="#87CEEB" opacity="0.7"></a-box>
+
+        <!-- Dividers -->
+        <a-box position="0 .5 .051" width="0.4" height="0.05" depth="0.02" color="#444540"></a-box> <!-- Horizontal -->
+        <a-box position="0 .5 .051" width="0.05" height=".85" depth="0.02" color="#444540"></a-box> <!-- Vertical -->
+      </a-entity>
+
+      <!-- House Plant -->
+      <a-entity position="0 1.25 -3">
+        
+        <!-- Plant Pot -->
+        <a-cylinder position="0 0 0" radius="0.5" height="0.3" color="#8B4513"></a-cylinder>
+        
+        <!-- Soil -->
+        <a-cylinder position="0 0.15 0" radius="0.45" height="0.1" color="#654321"></a-cylinder>
+        
+        <!-- Plant Stems -->
+        <a-cylinder position="0 0.4 0" radius="0.05" height="0.5" color="#627034"></a-cylinder>
+        <a-cylinder position="0.2 0.2 0.2" radius="0.03" height="0.5" color="#627034"></a-cylinder>
+        <a-cylinder position="-0.2 0.2 0.2" radius="0.03" height="0.5" color="#627034"></a-cylinder>
+        
+        <!-- Plant Leaves -->
+        <a-cone position="0 0.8 0" radius-bottom="0.2" radius-top="0" height="0.5" color="#627034"></a-cone>
+        <a-cone position="0.2 0.6 0.2" radius-bottom="0.15" radius-top="0" height="0.3" color="#627034"></a-cone>
+        <a-cone position="-0.2 0.6 0.2" radius-bottom="0.15" radius-top="0" height="0.3" color="#627034"></a-cone>
+        
+      </a-entity>
+
+
+
+      <a-box position="0 2.5 0" width="10" height="5" depth="10" color="#939F95" material="side: double"></a-box>
+      
+      <!-- Floor -->
+      <a-plane position="0 0 0" rotation="-90 0 0" width="10" height="10" color="#735C52"></a-plane>
+      
+      <!-- Painting 1-->
+       <a-box position="-1.75 2.35 -4.99" width="1" height = "1.25" depth="0.1" color = "#B87A8D"></a-box>
+
+      <!-- Painting 1-->
+      <a-box position="-2.25 3.75 -4.99" width="2" height = "1.25" depth="0.1" color = "#497774"></a-box>
+       
+      <!-- Window 1 -->
+      <a-entity position="0 3 -4.99" scale=".9 1.25 1">
+        <!-- Glass Pane -->
+        <a-box width="2" height="2.5" depth="0.1" color="#87CEEB"></a-box>
+
+        <!-- Glass Tint -->
+        <a-box position="0 0 0.05" width="2" height="2.5" depth="0.1" color="#000000" opacity="0.2"></a-box>
+
+        <!-- Vertical Divider -->
+        <a-box position="0 0 0" width="0.1" height="2.5" depth="0.15" color="#A9A9A9"></a-box>
+
+        <!-- Horizontal Dividers (Creating Six Panes) -->
+        <a-box position="0 0.45 0" width="2" height="0.1" depth="0.15" color="#A9A9A9"></a-box>
+        <a-box position="0 -0.45 0" width="2" height="0.1" depth="0.15" color="#A9A9A9"></a-box>
+
+        <!-- Border Panes -->
+        <!-- Top Border -->
+        <a-box position="0 1.25 0" width="2" height="0.1" depth="0.15" color="#A9A9A9"></a-box>
+        <!-- Bottom Border -->
+        <a-box position="0 -1.25 0" width="2" height="0.1" depth="0.15" color="#A9A9A9"></a-box>
+        <!-- Left Border -->
+        <a-box position="-1 0 0" width="0.1" height="2.5" depth="0.15" color="#A9A9A9"></a-box>
+        <!-- Right Border -->
+        <a-box position="1 0 0" width="0.1" height="2.5" depth="0.15" color="#A9A9A9"></a-box>
+      </a-entity>
+
+      <!-- Window 2-->
+      <a-entity position="5 3 -3.65" scale=".9 1 1" rotation="0 90 0">
+        <!-- Glass Pane -->
+        <a-box width="2" height="2.5" depth="0.1" color="#87CEEB"></a-box>
+
+        <!-- Glass Tint -->
+        <a-box position="0 0 0.05" width="2" height="2.5" depth="0.1" color="#000000" opacity="0.2"></a-box>
+
+        <!-- Vertical Divider -->
+        <a-box position="0 0 0" width="0.1" height="2.5" depth="0.15" color="#A9A9A9"></a-box>
+
+        <!-- Horizontal Dividers (Creating Six Panes) -->
+        <a-box position="0 0.45 0" width="2" height="0.1" depth="0.15" color="#A9A9A9"></a-box>
+        <a-box position="0 -0.45 0" width="2" height="0.1" depth="0.15" color="#A9A9A9"></a-box>
+
+        <!-- Border Panes -->
+        <!-- Top Border -->
+        <a-box position="0 1.25 0" width="2" height="0.1" depth="0.15" color="#A9A9A9"></a-box>
+        <!-- Bottom Border -->
+        <a-box position="0 -1.25 0" width="2" height="0.1" depth="0.15" color="#A9A9A9"></a-box>
+        <!-- Left Border -->
+        <a-box position="-1 0 0" width="0.1" height="2.5" depth="0.15" color="#A9A9A9"></a-box>
+        <!-- Right Border -->
+        <a-box position="1 0 0" width="0.1" height="2.5" depth="0.15" color="#A9A9A9"></a-box>
+      </a-entity>
+      
+
+      <!-- Counter -->
+      <a-box position="0 0.5 -5" width="10" height="1.25" depth="5.5" color="#e0e0e0"></a-box>
+      
+      <!-- Table Top -->
+      <a-cylinder position="0 .9 0" radius="1" height="0.1" color="#89674E"></a-cylinder>
+
+      <!-- Table Legs (Closer to the Table Top) -->
+      <a-cylinder position="0.6 0.35 0.6" radius="0.04" height="1" color="#89674E"></a-cylinder>
+      <a-cylinder position="-0.6 0.35 0.6" radius="0.04" height="1" color="#89674E"></a-cylinder>
+      <a-cylinder position="0.6 0.35 -0.6" radius="0.04" height="1" color="#89674E"></a-cylinder>
+      <a-cylinder position="-0.6 0.35 -0.6" radius="0.04" height="1" color="#89674E"></a-cylinder>
+
+      <!-- Bowl with Fruits on the Table -->
+      <a-entity position="0 .85 0">
+        <!-- Green Bowl -->
+        <a-sphere radius="0.25" color="#C0C0C0" scale="1 0.3 1" position="0 0.1 0"></a-sphere> <!-- Inner hollow -->
+
+        <!-- Fruits -->
+        <!-- Apple -->
+        <a-sphere position="-0.1 0.15 -0.1" radius="0.1" color="red"></a-sphere>
+        <!-- Banana (elongated yellow sphere) -->
+        <a-entity position="0.1 0.12 0">
+          <a-sphere radius="0.05" scale="2 1 1" color="yellow"></a-sphere>
+        </a-entity>
+        <!-- Orange -->
+        <a-sphere position="0 0.14 0.1" radius="0.08" color="orange"></a-sphere>
+      </a-entity>
+      <!--Rug-->
+      <a-box position="0 0.025 0" width="4" height="0.01" depth="3" color="#A3816D" material="side: double"></a-box>
+
+
+      <!--Chair 1-->
+      <a-entity position="0 0.5 1.05" rotation="0 -350 0">
+      <!-- Chair Seat -->
+      <a-box width="0.5" depth="0.5" height="0.05" color="#89674E"></a-box>
+
+      <!-- Chair Backrest -->
+      <a-box position="0 0.225 0.225" width="0.45" height="0.6" depth="0.05" color="#89674E"></a-box>
+
+      <!-- Chair Legs (Cylinders) -->
+      <a-cylinder position="-0.225 -0.275 0.225" radius="0.025" height="0.5" color="#89674E"></a-cylinder>
+      <a-cylinder position="0.225 -0.275 0.225" radius="0.025" height="0.5" color="#89674E"></a-cylinder>
+      <a-cylinder position="-0.225 -0.275 -0.225" radius="0.025" height="0.5" color="#89674E"></a-cylinder>
+      <a-cylinder position="0.225 -0.275 -0.225" radius="0.025" height="0.5" color="#89674E"></a-cylinder>
+    </a-entity>
+
+    <!--Chair 2-->
+    <a-entity position="-1 0.5 0.25" rotation="0 -85 0">
+      <!-- Chair Seat -->
+      <a-box width="0.5" depth="0.5" height="0.05" color="#89674E"></a-box>
+
+      <!-- Chair Backrest -->
+      <a-box position="0 0.225 0.225" width="0.45" height="0.6" depth="0.05" color="#89674E"></a-box>
+
+      <!-- Chair Legs (Cylinders) -->
+      <a-cylinder position="-0.225 -0.275 0.225" radius="0.025" height="0.5" color="#89674E"></a-cylinder>
+      <a-cylinder position="0.225 -0.275 0.225" radius="0.025" height="0.5" color="#89674E"></a-cylinder>
+      <a-cylinder position="-0.225 -0.275 -0.225" radius="0.025" height="0.5" color="#89674E"></a-cylinder>
+      <a-cylinder position="0.225 -0.275 -0.225" radius="0.025" height="0.5" color="#89674E"></a-cylinder>
+      </a-entity>
+
+      <!--Chair 3-->
+    <a-entity position=".75 0.5 0.25" rotation="0 85 0">
+      <!-- Chair Seat -->
+      <a-box width="0.5" depth="0.5" height="0.05" color="#89674E"></a-box>
+
+      <!-- Chair Backrest -->
+      <a-box position="0 0.225 0.225" width="0.45" height="0.6" depth="0.05" color="#89674E"></a-box>
+
+      <!-- Chair Legs (Cylinders) -->
+      <a-cylinder position="-0.225 -0.275 0.225" radius="0.025" height="0.5" color="#89674E"></a-cylinder>
+      <a-cylinder position="0.225 -0.275 0.225" radius="0.025" height="0.5" color="#89674E"></a-cylinder>
+      <a-cylinder position="-0.225 -0.275 -0.225" radius="0.025" height="0.5" color="#89674E"></a-cylinder>
+      <a-cylinder position="0.225 -0.275 -0.225" radius="0.025" height="0.5" color="#89674E"></a-cylinder>
+      </a-entity>
+
+      <!--Chair 4-->
+    <a-entity position="-.25 0.5 -.25" rotation="0 185 0">
+      <!-- Chair Seat -->
+      <a-box width="0.5" depth="0.5" height="0.05" color="#89674E"></a-box>
+
+      <!-- Chair Backrest -->
+      <a-box position="0 0.225 0.225" width="0.45" height="0.6" depth="0.05" color="#89674E"></a-box>
+
+      <!-- Chair Legs (Cylinders) -->
+      <a-cylinder position="-0.225 -0.275 0.225" radius="0.025" height="0.5" color="#89674E"></a-cylinder>
+      <a-cylinder position="0.225 -0.275 0.225" radius="0.025" height="0.5" color="#89674E"></a-cylinder>
+      <a-cylinder position="-0.225 -0.275 -0.225" radius="0.025" height="0.5" color="#89674E"></a-cylinder>
+      <a-cylinder position="0.225 -0.275 -0.225" radius="0.025" height="0.5" color="#89674E"></a-cylinder>
+      </a-entity>
+
+      <!-- Lamp Connecter thing -->
+      <a-cylinder position="0 3 0" radius="0.01" height="2" color="#000000"></a-cylinder>
+      
+      <!-- Cabinet -->
+      <a-box position="4 1.5 0.8" width="2" height="3" depth="2" color="#383934"></a-box>
+      <a-box position="4 1.5 0.26" width="1.9" height="2.9" depth="0.05" color="#C0C0C0" material="opacity: 0.5"></a-box>
+
+       <!-- Couch -->
+       <a-box position="1 0 3.25" width="3" height = "1.5" depth = "2" color = "#1A2A2A"></a-box>
+      
+      <!-- Close Corner -->
+      <a-box position="-2.35 0 .75" width="1" height="5" depth=".025" color = "#FFFFFF" rotation="0 10 -1"></a-box>
+
+      <!-- Camera -->
+      <a-entity position="-1.65 1 2.5" rotation="-2 -35 0">
+        <a-entity camera="fov: 65"></a-entity>
+      </a-entity>
+      
+      <!-- Lighting -->
+      <a-light type="ambient" color="#FFF" intensity="0.4"></a-light>
+      <a-light type="point" position="0 3 0" color="#FFF" intensity="0.6"></a-light>
+      <a-light type="directional" position="-1 1 0" color="#FFF" intensity="0.1"></a-light>
+    </a-scene>
+  </body>
+</html>
